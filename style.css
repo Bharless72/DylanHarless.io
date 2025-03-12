@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Oswald:wght@200..700&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', monospace;
+}
+
+ul {
+    list-style: none;
+    background-color: #003844;
+    text-align: center; 
+    padding: 0px 0; 
+    
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    
+}
+
+ul li a {
+    display: block;
+    padding: 25px 30px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown {
+    left: 50%;
+    transform: translateX(-50%); 
+    min-width: 200px; 
+    background: #006C67;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    text-align: left; 
+}
+
+ul li a:hover{
+    background-color: #006C67;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+#nameTitle {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    padding-left: 150px;
+    padding-top: 0px;
+    font-size: 45px;
+    color: white;
+    
+}
+
+.backgroundcontainer{
+    padding-top: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr .5fr .5fr;
+}
+
+.backgroundcontainer div{
+    border: 5px solid #003844;
+    padding: 5px;
+    border-radius: 10px;
+}
+.heading{
+    font-size: 30px;
+    font-weight: bold;
+}
+.ifempty{
+    background-color: rgb(161, 158, 158);
+}
